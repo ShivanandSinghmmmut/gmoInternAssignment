@@ -21,9 +21,7 @@ const db = mongoose.connect(MONGO_URL,{
     console.log(err)
 })
 
-app.get("/",(req, res)=>{
-    res.send("hello welcome to the project")
-})
+
 const PORT = 4000 || process.env.PORT;
 app.listen(PORT,()=>{
     console.log("app is listening on 4000")

@@ -3,9 +3,7 @@ const router = express.Router();
 const userDetails = require("../model/userSchema")
 
 
-router.get("/",(req, res)=>{
-    res.send("hello guys welcome to my youtube channel")
-})
+
 
 router.post("/register",(req,res)=>{
     const {name, phone, email} = req.body;

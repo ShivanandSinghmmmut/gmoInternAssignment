@@ -9,6 +9,14 @@ app.use(cors())
 
 dotenv.config();
 app.use(require("./routes/auth"))
+
+//static files
+app.use(express.static(path.join(__dirname, "./client/build")));
+
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
+
 const MONGO_URL = process.env.MONGO_URL
 
 const db = mongoose.connect(MONGO_URL,{

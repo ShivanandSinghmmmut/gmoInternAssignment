@@ -1,0 +1,58 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+
+.register-form{
+  /* background-color: aqua; */
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #ff006e , #0061ff);
+  
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0da9d5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+}
+
+.form-container input{
+  /* width: 100%; */
+  padding: 10px;
+  margin: 20px;
+}
+
+.form-container button{
+  /* width: 100%; */
+  padding: 10px;
+  margin: 20px;
+}
+
+.second_page_form1{
+  width: 80%;
+  margin: auto;
+  padding: 60px;
+}
+
+.second_page_form2{
+  width: 80%;
+  margin: auto;
+  padding: 60px;
+}
+
+.second_page{
+  background: linear-gradient(to right, #ff006e , #0061ff);
+}
